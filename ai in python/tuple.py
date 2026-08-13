@@ -1,0 +1,5 @@
+a=str(input("enter first vegetable name"))
+b=str(input("enter second vegetable name"))
+c=str(input("enter third vegetable name"))
+vegetable=((a),(b),(c))
+print(vegetable)
