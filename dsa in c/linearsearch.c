@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(){
     int N = 20, arr[N], target;
     printf("Enter %d numbers: ", N);
