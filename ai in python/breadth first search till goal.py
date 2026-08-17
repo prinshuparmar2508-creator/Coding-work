@@ -1,3 +1,4 @@
+goal=str(input("enter your goal:"))
 graph = {"A": ["B", "C"],
          "B": ["D", "E"],
          "C": ["F", "G"],
@@ -18,9 +19,14 @@ def bfs(visited, graph, node):
     while queue:
         c = queue.pop(0)
         print(c, end=" ")
+        if c==goal:
+            print("The goal is found:")
+            return
         for succesor in graph[c]:
             if succesor not in visited:
                 visited.append(succesor)
                 queue.append(succesor)
-print("The result for breadth first traversal search is: ")
+    else:
+        print("\n The goal isn't here")
+print("The result for breadth first search is: ")
 bfs(visited, graph, "A")
