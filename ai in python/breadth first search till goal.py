@@ -21,7 +21,7 @@ def bfs(visited, graph, node):
         c = queue.pop(0)
         print(c, end=" ")
         if c==goal:
-            print("The goal is found:")
+            print("\nThe goal is found:")
             return
         for succesor in graph[c]:
             if succesor not in visited:
