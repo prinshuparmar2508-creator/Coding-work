@@ -1,4 +1,5 @@
 goal=str(input("enter your goal:"))
+goal = goal.upper()
 graph = {"A": ["B", "C"],
          "B": ["D", "E"],
          "C": ["F", "G"],

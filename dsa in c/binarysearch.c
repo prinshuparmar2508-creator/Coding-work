@@ -12,7 +12,10 @@ int main(){
             printf("%d found at index %d.\n", target, mid);
             return 0;
         }
+        else if(arr[mid] < target) low = mid + 1;
+        else high = mid - 1;
     }
     printf("%d not found in given array.\n", target);
 
     return 0;
+}
