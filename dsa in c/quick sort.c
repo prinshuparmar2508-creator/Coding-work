@@ -5,10 +5,9 @@ int partition(int a[], int start, int end)
     int i = (start - 1);
     for (int j = start; j <= end - 1; j++)
     {
-        // if current element is smaller than pivot
         if (a[j]<pivot)
         {
-            i++;// increment index of smaller element
+            i++;
             int t = a[i];
             a[i] = a[j];
             a[j] = t;
@@ -19,20 +18,16 @@ int partition(int a[], int start, int end)
     a[end] = t;
     return (i + 1);
 }
-/* function to implement quick sort*/
 void quick(int a[],int start,int end)
-/*a[]= array to be sorted, start = starting index, end = ending index*/
 {
     if (start < end)
     {
         int p = partition(a, start, end);
-        // p is partitioning index
         quick(a, start, p-1);
         quick(a, p + 1, end);
 
     }
 }
-/* function to implement quick sort*/
 void printArr(int a[], int n)
 {
     int i;
