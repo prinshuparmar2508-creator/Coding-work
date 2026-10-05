@@ -9,7 +9,7 @@ def greet_user():
     user_name = name_entry.get()
     if user_name:
         result_label.config(text=f"hello,{user_name}! Welcome!")
-    
+
     else:
         result_label.config(text="Pls enter name")
 
