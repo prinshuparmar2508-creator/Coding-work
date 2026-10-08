@@ -23,7 +23,7 @@ def queen_problem(n):
 
     def print_board():
         for i in range(n):
-            line = ['Q' if c == board[i] else '*' for c in range(n)]
+            line = ['Q' if c == board[i] else '-' for c in range(n)]
             print(' '.join(line))
         print()
 
